@@ -1,27 +1,34 @@
 <template>
   <div id="app">
-  	<el-tag v-for="tag in tags" :key="tag.name" closable :type="tag.type">
-			{{tag.name}}
-		</el-tag>
+		<transition name="fade"
+		            mode="out-in">
+			<router-view></router-view>
+		</transition>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data(){
-  	return {
-  		tags: [
-          { name: '标签一', type: '' },
-          { name: '标签二', type: 'success' },
-          { name: '标签三', type: 'info' },
-          { name: '标签四', type: 'warning' },
-          { name: '标签五', type: 'danger' }
-        ]
-  	}
-  }
+  name: 'app'
 }
 </script>
 
 <style scoped>
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+		font-size: 14px;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	#app {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+	}
 </style>

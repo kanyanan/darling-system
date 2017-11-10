@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 459657 */
+  src: url('//at.alicdn.com/t/font_459657_d45hpyb37d4mquxr.eot');
+  src: url('//at.alicdn.com/t/font_459657_d45hpyb37d4mquxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_459657_d45hpyb37d4mquxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_459657_d45hpyb37d4mquxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_459657_d45hpyb37d4mquxr.svg#iconfont') format('svg');
+}
+
+[class^="el-icon-custom"], [class*=" el-icon-custom"] {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-icon-custom-fold:before { content: "\e606"; }
+
+.el-icon-custom-user:before { content: "\e630"; }
+
+.el-icon-custom-exit:before { content: "\e63f"; }
+
+/*菜单图标*/
+.el-icon-custom-sys-manager:before { content: "\e6a8"; }
+
+.el-icon-custom-jurisdiction:before { content: "\e600"; }
+
+.el-icon-custom-personal:before { content: "\e699"; }
+
+.el-icon-custom-medical:before { content: "\e643"; }
+
+.el-icon-custom-welcoming:before { content: "\e798"; }
